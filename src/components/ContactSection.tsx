@@ -19,7 +19,7 @@ export default function ContactSection() {
 
         {/* Right: Info */}
         <div className="w-full md:w-2/3 text-center md:text-left">
-          <h2 className="text-3xl font-bold text-red-600 mb-2">Let's Connect</h2>
+          <h2 className="text-3xl font-bold text-red-600 mb-2">Let&rsquo;s Connect</h2>
           <p className="text-zinc-300 mb-6">
             I&rsquo;m always up for a chat, a coffee, or a new collaboration. Whether you&rsquo;re curious about my work or just want to say hi, feel free to reach out!
           </p>
