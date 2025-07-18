@@ -13,29 +13,30 @@ import {
 
 export default function ProjectCard({ project }: { project: Project }) {
   const getTechIcon = (tech: string) => {
-    switch (tech.toLowerCase()) {
-      case "html5":
-      case "css3":
-      case "javascript":
-        return <Globe className="w-4 h-4 mr-1" />;
-      case "reactjs":
-      case "next.js":
-        return <Globe className="w-4 h-4 mr-1" />;
-      case "postgresql":
-      case "mysql":
-        return <Database className="w-4 h-4 mr-1" />;
-      case "ruby on rails":
-      case "django":
-        return <FileCode className="w-4 h-4 mr-1" />;
-      case "aws":
-      case "vercel":
-        return <Cloud className="w-4 h-4 mr-1" />;
-      case "tailwind":
-        return <Layers3 className="w-4 h-4 mr-1" />;
-      default:
-        return null;
-    }
-  };
+  const lower = tech.toLowerCase();
+
+  const iconPath = `/icons/${lower}.svg`;
+
+  const techsWithIcons = [
+    "html5", "css3", "javascript", "reactjs", "nextjs",
+    "postgresql", "mysql", "ruby on rails", "django",
+    "aws", "vercel", "tailwind", "firebase", "typescript", "python"
+  ];
+
+  if (techsWithIcons.includes(lower)) {
+    return (
+      <Image
+        src={iconPath}
+        alt={tech}
+        width={16}
+        height={16}
+        className="inline-block mr-1"
+      />
+    );
+  }
+
+  return null;
+};
 
   return (
     <motion.div

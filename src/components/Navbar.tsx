@@ -22,7 +22,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo or Name */}
         <Link href="/" className="text-2xl font-bold text-red-600">
-          Aurick
+          aurickchats
         </Link>
 
         {/* Navigation Links */}
