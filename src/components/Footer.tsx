@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Github, Linkedin, Mail } from "lucide-react";
+import ScrollToTopButton from "./ScrollToTopButton";
 
+<ScrollToTopButton />
 export default function Footer() {
   return (
     <footer className="bg-zinc-950 text-gray-300 px-6 py-10 mt-20">
@@ -66,6 +68,7 @@ export default function Footer() {
       <div className="mt-6 text-center text-sm text-gray-400">
         Built with ❤️ using Next.js, Tailwind CSS, and TypeScript
       </div>
+    <ScrollToTopButton />
     </footer>
   );
 }
