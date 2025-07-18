@@ -5,6 +5,13 @@ export const metadata: Metadata = {
   title: "Aurick Chatterjee | Full-Stack Developer & Consultant",
   description:
     "Personal portfolio showcasing Aurick Chatterjee's full-stack development projects, technical skills, and freelance consulting work. Built with Next.js, Tailwind CSS, and TypeScript.",
+    icons: {
+        icon: [
+            {
+            url: "/favicon.ico",
+            },
+        ],
+        },
   keywords: [
     "Aurick Chatterjee",
     "Aurick",
