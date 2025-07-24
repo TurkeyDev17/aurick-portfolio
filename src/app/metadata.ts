@@ -29,12 +29,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Aurick Chatterjee | Full-Stack Developer & Consultant",
     description:
-      "Explore Aurick's technical projects, startup work, and consulting experience — all built with modern tech like Next.js and Tailwind.",
+      "Explore Aurick's technical projects, startup work, and provided services.",
     url: "https://aurickchatterjee.com", 
     siteName: "Aurick Chatterjee",
     images: [
       {
-        url: "/metadata_banner.png", // optional social image
+        url: "/metadata_banner.png",
         width: 1200,
         height: 630,
         alt: "Aurick Portfolio Preview",
