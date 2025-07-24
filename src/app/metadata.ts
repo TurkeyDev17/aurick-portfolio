@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://aurickchatterjee.com"),
+
   title: "Aurick Chatterjee | Full-Stack Developer & Consultant",
   description:
-    "Personal portfolio showcasing Aurick Chatterjee's full-stack development projects, technical skills, and freelance consulting work. Built with Next.js, Tailwind CSS, and TypeScript.",
+    "Personal portfolio showcasing Aurick Chatterjee's full-stack development projects, technical skills, and provided services.",
     icons: {
         icon: [
             {
@@ -28,11 +30,11 @@ export const metadata: Metadata = {
     title: "Aurick Chatterjee | Full-Stack Developer & Consultant",
     description:
       "Explore Aurick's technical projects, startup work, and consulting experience — all built with modern tech like Next.js and Tailwind.",
-    url: "https://aurickchatterjee.com", // replace later with your real domain
-    siteName: "Aurick Chatterjee Portfolio",
+    url: "https://aurickchatterjee.com", 
+    siteName: "Aurick Chatterjee",
     images: [
       {
-        url: "/preview.png", // optional social image
+        url: "/metadata_banner.png", // optional social image
         width: 1200,
         height: 630,
         alt: "Aurick Portfolio Preview",
