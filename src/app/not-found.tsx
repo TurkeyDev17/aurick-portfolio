@@ -66,7 +66,7 @@ export default function NotFoundPage() {
         transition={{ delay: 0.6 }}
         className="text-center text-neutral-300 mb-6"
       >
-        But hey, while you're here... fancy testing your aim?
+        But hey, while you&rsquo;re here... fancy testing your aim?
       </motion.p>
 
       {/* Game Controls */}
