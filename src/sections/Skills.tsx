@@ -14,7 +14,7 @@ export default function Skills() {
                 {categories.map((category) => (
                     <div key={category} className="mb-12">
                         <h3 className="text-2xl font-semibold mb-6 text-center">{category}</h3>
-                        <div className="flex flex-wrap justify-center gap-6">
+                        <div className="grid justify-center gap-6 grid-cols-[repeat(auto-fit,minmax(220px,1fr))]">
                             {skills
                                 .filter((s) => s.category === category)
                                 .map((skill, index) => (

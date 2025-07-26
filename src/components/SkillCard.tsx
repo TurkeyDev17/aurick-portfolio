@@ -9,7 +9,7 @@ const motion = FramerMotion.motion;
 export default function SkillCard({ skill }: { skill: Skill }) {
   return (
     <motion.div
-      className="bg-zinc-900 rounded-xl p-6 shadow-md transition-transform duration-300 delay-100 hover:scale-105 hover:shadow-red-500"
+      className="bg-zinc-900 rounded-xl p-6 shadow-md transition-transform duration-300 delay-100 hover:scale-105 hover:shadow-red-500 h-full min-h-[180px] flex flex-col justify-start"
       variants={{
         hidden: { opacity: 0, y: 20 },
         visible: (i: number) => ({
