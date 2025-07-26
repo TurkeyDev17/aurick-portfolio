@@ -75,13 +75,13 @@ export default function ContactSection() {
               Let&rsquo;s Build Something Great
             </h2>
             <p className="text-zinc-300 mb-4">
-              Whether you're ready to bring an idea to life or just exploring
-              options, I'd love to hear about your project. I work with
+              Whether you&rsquo;re ready to bring an idea to life or just exploring
+              options, I&rsquo;d love to hear about your project. I work with
               businesses of all sizes to design and develop custom web
               solutions — from internal tools to polished digital experiences.
             </p>
             <p className="text-zinc-300">
-              Tell me what you need, and I'll tailor the right solution for you.
+              Tell me what you need, and I&rsquo;ll tailor the right solution for you.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 w-full justify-center md:justify-start">
@@ -108,7 +108,7 @@ export default function ContactSection() {
             Start Your Project
           </h3>
           <p className="text-zinc-400 mb-6">
-            Fill out the form below with some project details, and I’ll be in
+            Fill out the form below with some project details, and I&rsquo;ll be in
             touch within 24 hours to discuss the next steps.
           </p>
           <form onSubmit={handleSubmit} className="space-y-4">
