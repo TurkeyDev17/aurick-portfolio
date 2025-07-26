@@ -65,10 +65,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Line */}
-      <div className="mt-6 text-center text-sm text-gray-400">
-        Built with ❤️ using Next.js, Tailwind CSS, and TypeScript
-      </div>
     <ScrollToTopButton />
     </footer>
   );
