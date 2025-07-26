@@ -13,7 +13,7 @@ export async function POST(req: Request) {
         Name: ${body.name}
         Email: ${body.email}
         Phone Number: ${body.phone}
-        What they are looking to build: ${body.message}
+        What they are looking to build: ${body.project}
         Budget: ${body.budget || "Not provided"}
         How they found me: ${body.referral || "Not specified"}
       `,
