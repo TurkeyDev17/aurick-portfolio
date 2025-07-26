@@ -1,4 +1,5 @@
 import React from "react";
+import CheckIcon from "./CheckIcon";
 
 interface ServiceCardProps {
   title: string;
@@ -21,12 +22,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
         <p className="text-neutral-300 text-sm mb-4">{description}</p>
         <ul className="space-y-2 text-sm text-neutral-200">
-          {items.map((item, index) => (
-            <li key={index} className="flex items-start gap-2">
-              <span className="text-red-500 mt-1">✓</span>
-              <span>{item}</span>
+        {items.map((item, index) => (
+            <li key={index} className="flex items-center gap-3">
+            <CheckIcon />
+            <span>{item}</span>
             </li>
-          ))}
+        ))}
         </ul>
       </div>
       <div className="mt-6">
