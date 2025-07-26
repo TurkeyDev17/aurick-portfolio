@@ -34,7 +34,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           href="#contact"
           className="block w-full rounded-lg bg-red-600 px-4 py-2 text-center text-white font-medium hover:bg-red-700 transition"
         >
-          Get a free quote!
+          Get a tailored solution
         </a>
       </div>
     </div>

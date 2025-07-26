@@ -12,7 +12,7 @@ export default function Services() {
   const data = activeTab === "Websites" ? services.websites : services.automation;
 
   return (
-    <section id="services" className="py-20 px-4 md:px-8 bg-neutral-950 text-white">
+    <section id="services" className="py-20 px-4 md:px-8 bg-black text-white">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-red-500 text-center">
           Services

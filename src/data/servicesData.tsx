@@ -3,26 +3,26 @@ export const services = {
     {
       title: "🛠️ Custom Web Applications & Business Tools",
       description:
-        "I build powerful, tailor-made web applications that streamline operations and solve real business problems. Whether it's a pricing calculator, internal dashboard, or automation tool, I work closely with clients to design tools that fit seamlessly into their workflow and deliver measurable impact.",
+        "I design and build tailored web applications that streamline operations, reduce manual work, and deliver real business impact. Whether it's a pricing calculator, workflow tool, or internal dashboard, I work with businesses to turn time-consuming processes into scalable digital systems - built with precision and purpose.",
       items: [
-        "Bespoke business logic (e.g. pricing, commission structures, form calculations)",
-        "Interactive user interfaces tailored to your workflow",
+        "Bespoke business logic (e.g. pricing calculators, commission workflows)",
+        "Interactive user flows aligned with your internal processes",
         "Admin panels or dashboards for internal use",
-        "API integration and database-backed functionality",
-        "Mobile-friendly, responsive design",
+        "Secure, database-integrated functionality with API options",
+        "Fully responsive UI for desktop, tablet, and mobile",
         "Built with performance, security, and scalability in mind",
       ],
     },
     {
       title: "💻 Marketing & Showcase Websites",
       description:
-        "I design sleek, modern websites that elevate your brand and clearly communicate your services. These sites are perfect for businesses that want to create a strong online presence and make a great first impression — without needing complex backend features.",
+        "I create modern, high-performance websites that help businesses stand out and communicate clearly. These sites are ideal for showcasing services, products, or brand identity - built to impress visually, perform well technically, and convert visitors into leads.",
       items: [
-        "Clean, mobile-optimized design that reflects your brand",
-        "Custom-built sections for services, testimonials, contact forms, and more",
-        "Fast-loading pages with SEO-friendly structure",
-        "Optional animations or interactive elements for added polish",
-        "Easy-to-maintain codebase, with CMS integration on request",
+        "Custom design aligned with your brand’s personality",
+        "Responsive layouts that work beautifully across all devices",
+        "Sections for services, testimonials, FAQs, contact, and more",
+        "Lightweight animations or interactions for added engagement",
+        "SEO-friendly structure and fast load times",
         "Ideal for tradies, product showcases, and personal brands",
       ],
     },
@@ -31,7 +31,7 @@ export const services = {
     {
       title: "⚙️ Process Automation",
       description:
-        "I build lightweight, custom automation tools that eliminate repetitive tasks, saving you hours of manual effort. Whether it's scraping data, filling forms, organizing files, or simulating in-app actions, I design tailored solutions that quietly do the heavy lifting for you — efficiently and reliably.",
+        "I build lightweight, custom automation tools that eliminate repetitive tasks, saving you hours of manual effort. Whether it's scraping data, filling forms, organizing files, or simulating in-app actions, I design tailored solutions that quietly do the heavy lifting for you - efficiently and reliably.",
       items: [
         "Python-based automation scripts for desktop or web",
         "Task bots to automate data entry, file handling, or app interactions",
