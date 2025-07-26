@@ -5,6 +5,7 @@ export interface Project {
   description: string;
   image: string;
   techStack: string[];
+  liveUrl?: string;
 }
 
 
@@ -13,13 +14,15 @@ export const projects = [
     title: "Stairlift Calculator",
     description: "Built a custom pricing and product configuration tool for a large stairlift company generating $10M+ in annual revenue. The tool automated manual workflows that previously took 3+ hours, reducing them to just seconds. Designed for use by field sales teams on both iPads and Android tablets, the solution featured a Python/Flask backend with PostgreSQL for persistent storage and a fully responsive frontend.",
     image: "/project_showcase/stairlift_showcase.png",
-    techStack: ["Python", "Flask", "PostgreSQL" ,"HTML5", "CSS3"]
+    techStack: ["Python", "Flask", "PostgreSQL" ,"HTML5", "CSS3"],
+    liveUrl: "https://stairlift-price-calculator.onrender.com/"
   },
   {
     title: "LofiHaven",
     description: "Co-designed and engineered a feature-rich productivity platform that blends lofi music, ambient sound mixing, Pomodoro timers, and digital focus tools into a cohesive web experience. Focused on intuitive UX and high responsiveness across devices, the platform empowers users to create customized focus environments for work and study. Built with a modern React and Next.js stack, with strong emphasis on performance and scalability.",
     image: "/project_showcase/lofihaven_showcase.png",
-    techStack: ["ReactJS", "Nextjs", "JavaScript", "TypeScript"]
+    techStack: ["ReactJS", "Nextjs", "JavaScript", "TypeScript"],
+    liveUrl: "https://lofihaven.xyz/",
   },
   {
     title: "Spot The Ball (POC)",

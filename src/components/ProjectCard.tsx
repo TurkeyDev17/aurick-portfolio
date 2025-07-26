@@ -3,40 +3,32 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Project } from "@/data/projects";
-import {
-  Globe,
-  Database,
-  FileCode,
-  Cloud,
-  Layers3,
-} from "lucide-react";
 
 export default function ProjectCard({ project }: { project: Project }) {
   const getTechIcon = (tech: string) => {
-  const lower = tech.toLowerCase();
+    const lower = tech.toLowerCase();
+    const iconPath = `/icons/${lower}.svg`;
 
-  const iconPath = `/icons/${lower}.svg`;
+    const techsWithIcons = [
+      "html5", "css3", "javascript", "reactjs", "nextjs",
+      "postgresql", "mysql", "ruby on rails", "django",
+      "aws", "vercel", "tailwind", "firebase", "typescript", "python"
+    ];
 
-  const techsWithIcons = [
-    "html5", "css3", "javascript", "reactjs", "nextjs",
-    "postgresql", "mysql", "ruby on rails", "django",
-    "aws", "vercel", "tailwind", "firebase", "typescript", "python"
-  ];
+    if (techsWithIcons.includes(lower)) {
+      return (
+        <Image
+          src={iconPath}
+          alt={tech}
+          width={16}
+          height={16}
+          className="inline-block mr-1"
+        />
+      );
+    }
 
-  if (techsWithIcons.includes(lower)) {
-    return (
-      <Image
-        src={iconPath}
-        alt={tech}
-        width={16}
-        height={16}
-        className="inline-block mr-1"
-      />
-    );
-  }
-
-  return null;
-};
+    return null;
+  };
 
   return (
     <motion.div
@@ -46,7 +38,29 @@ export default function ProjectCard({ project }: { project: Project }) {
       viewport={{ once: true }}
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
-      <div className="overflow-hidden rounded-md mb-4">
+      {/* Image and Button */}
+      <div className="relative overflow-hidden rounded-md mb-4">
+      {project.liveUrl ? (
+        <a
+          href={project.liveUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute top-3 right-3 z-10 flex items-center gap-2 px-4 py-2 text-sm font-semibold bg-red-600 text-white border-2 border-black rounded-md shadow-lg hover:bg-red-700 transition-all duration-300 group"
+        >
+          <span className="relative flex h-3 w-3">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+          </span>
+          View Live
+        </a>
+      ) : (
+        <span
+          className="absolute top-3 right-3 z-10 px-4 py-2 text-sm font-semibold bg-neutral-700 text-neutral-400 border-2 border-black rounded-md cursor-not-allowed select-none"
+          title="This project is not yet live"
+        >
+          Not Live
+        </span>
+      )}
         <Image
           src={project.image}
           alt={project.title}
@@ -56,11 +70,13 @@ export default function ProjectCard({ project }: { project: Project }) {
         />
       </div>
 
+      {/* Title + Description */}
       <h3 className="text-xl font-semibold text-red-500 mb-2">
         {project.title}
       </h3>
       <p className="text-gray-300 text-sm mb-4">{project.description}</p>
 
+      {/* Tech Stack */}
       <div className="flex flex-wrap gap-2">
         {project.techStack.map((tag: string, index: number) => (
           <span
