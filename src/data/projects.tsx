@@ -15,7 +15,7 @@ export const projects = [
     description: "Built a custom pricing and product configuration tool for a large stairlift company generating $10M+ in annual revenue. The tool automated manual workflows that previously took 3+ hours, reducing them to just seconds. Designed for use by field sales teams on both iPads and Android tablets, the solution featured a Python/Flask backend with PostgreSQL for persistent storage and a fully responsive frontend.",
     image: "/project_showcase/stairlift_showcase.png",
     techStack: ["Python", "Flask", "PostgreSQL" ,"HTML5", "CSS3"],
-    liveUrl: "https://stairlift-price-calculator.onrender.com/"
+    liveUrl: "https://stairlifts.aurickchatterjee.com/"
   },
   {
     title: "LofiHaven",
