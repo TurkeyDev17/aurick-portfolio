@@ -6,12 +6,18 @@ export default function Hero() {
         Web & App Developer · Technical Consultant · Parliament of Victoria · Commerce at The University of Melbourne 
       </p>
       <div className="mt-8 flex gap-4">
-        <button className="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-full transition">
+        <a
+          href="#projects"
+          className="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-full transition"
+        >
           View Projects
-        </button>
-        <button className="bg-transparent border border-red-600 hover:bg-red-600 text-white font-semibold py-2 px-6 rounded-full transition">
+        </a>
+        <a
+          href="#contact"
+          className="bg-transparent border border-red-600 hover:bg-red-600 text-white font-semibold py-2 px-6 rounded-full transition"
+        >
           Contact Me
-        </button>
+        </a>
       </div>
     </section>
   );
