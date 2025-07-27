@@ -204,7 +204,7 @@ export default function ContactSection() {
               {status === "sending"
                 ? "Sending..."
                 : status === "sent"
-                ? "Message Sent Successfully"
+                ? "Message Sent"
                 : "Submit"}
             </button>
 
