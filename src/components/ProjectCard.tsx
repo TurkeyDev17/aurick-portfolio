@@ -58,7 +58,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           className="absolute top-3 right-3 z-10 px-4 py-2 text-sm font-semibold bg-neutral-700 text-neutral-400 border-2 border-black rounded-md cursor-not-allowed select-none"
           title="This project is not yet live"
         >
-          Not Live
+          Available on mobile
         </span>
       )}
         <Image
