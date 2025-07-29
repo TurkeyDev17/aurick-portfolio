@@ -16,6 +16,10 @@ export const metadata: Metadata = {
         },
   keywords: [
     "Aurick Chatterjee",
+    "Aurick Chatterjee website",
+    "Aurick Chatterjee services",
+    "Aurick Chatterjee unimelb",
+    "Aurick Chatterjee university of melbourne",
     "Aurick",
     "Portfolio",
     "Web Developer",

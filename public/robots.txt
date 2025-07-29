@@ -1,0 +1,9 @@
+User-agent: *
+Disallow:
+
+Allow: /
+
+Sitemap: https://aurickchatterjee.com/sitemap.xml
+
+# Optional: polite crawl rate limit
+Crawl-delay: 5
