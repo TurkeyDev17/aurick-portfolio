@@ -32,7 +32,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 
   return (
     <motion.div
-      className="rounded-xl bg-zinc-900 p-4 shadow-md transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_12px_2px_rgba(255,0,0,0.4)]"
+      className="rounded-xl bg-zinc-900 p-4 shadow-md transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_16px_4px_rgba(255,0,0,0.6)]"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
