@@ -12,18 +12,18 @@ export default function ProjectCard({ project }: { project: Project }) {
     const techsWithIcons = [
       "html5", "css3", "javascript", "reactjs", "nextjs",
       "postgresql", "mysql", "ruby on rails", "django",
-      "aws", "vercel", "tailwind", "firebase", "typescript", "python"
+      "aws", "vercel", "tailwind", "firebase", "typescript", "python", "flask"
     ];
 
     if (techsWithIcons.includes(lower)) {
       return (
-        <Image
-          src={iconPath}
-          alt={tech}
-          width={16}
-          height={16}
-          className="inline-block mr-1"
-        />
+      <Image
+        src={iconPath}
+        alt={tech}
+        width={16}
+        height={16}
+        className="inline-block mr-1 transition group-hover:brightness-0 group-hover:invert"
+      />
       );
     }
 
@@ -56,7 +56,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       ) : (
         <span
           className="absolute top-3 right-3 z-10 px-4 py-2 text-sm font-semibold bg-neutral-700 text-neutral-400 border-2 border-black rounded-md cursor-not-allowed select-none"
-          title="This project is not yet live"
+          title="This project is only accessible on mobile"
         >
           Available on mobile
         </span>
@@ -81,7 +81,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         {project.techStack.map((tag: string, index: number) => (
           <span
             key={index}
-            className="flex items-center px-2 py-1 text-sm text-white bg-zinc-800 rounded-md border border-zinc-700 hover:bg-red-500 hover:text-white transition"
+            className="group flex items-center px-2 py-1 text-sm text-white bg-zinc-800 rounded-md border border-zinc-700 hover:bg-red-500 hover:text-white transition"
           >
             {getTechIcon(tag)}
             {tag}
