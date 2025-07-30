@@ -214,6 +214,18 @@ export default function ContactSection() {
               </p>
             )}
           </form>
+          <p className="text-sm text-zinc-500 mt-4">
+            By submitting this form, you acknowledge that you have read and agree to the{" "}
+            <a
+              href="/privacy-policy"
+              className="text-red-500 underline hover:text-red-400 transition"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Privacy Policy
+            </a>
+            .
+          </p>
         </div>
       </motion.div>
     </section>
