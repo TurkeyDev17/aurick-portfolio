@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   metadataBase: new URL("https://aurickchatterjee.com"),
 
-  title: "Aurick Chatterjee | Full-Stack Developer & Consultant",
+  title: "Aurick Chatterjee | Full-Stack Developer & Tech Consultant",
   description:
     "Personal portfolio showcasing Aurick Chatterjee's full-stack development projects, technical skills, and provided services.",
     icons: {
